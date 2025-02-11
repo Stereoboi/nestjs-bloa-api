@@ -1,0 +1,30 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName": "Bohdan",
+    "lastName": "Pishchak",
+    "email": "ohd7@gmail.com",
+    "password": "Jo123212#"
+}
+
+POST http://localhost:3000/users/create-many
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjksImVtYWlsIjoib2hkQGdtYWlsLmNvbSIsImlhdCI6MTczODc2MTMwMCwiZXhwIjoxNzM4NzY0OTAwLCJhdWQiOiJsb2NhbGhvc3Q6MzAwMCIsImlzcyI6ImxvY2FsaG9zdDozMDAwIn0.smFWrrShCkGuSH-KYGYvdfmpw7IJRSBft50BYCZEoUs
+
+{
+    "users": [
+            {
+            "firstName": "Roman",
+            "lastName": "Pishchak",
+            "email": "rpwr@gmail.com",
+            "password": "Jo123212#"
+            },
+            {
+            "firstName": "Sobio",
+            "lastName": "Wiopoi",
+            "email": "so@gmail.com",
+            "password": "Jo123212#"
+            }
+    ]
+}
